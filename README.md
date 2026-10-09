@@ -78,7 +78,7 @@ Skill = 1 − RMSE / RMSE(persistence). Mean test-week daytime power is about 11
 - Without any weather forecast (A), both models beat both baselines. The forecasts follow the daily cycle well but overshoot when clouds arrive suddenly, because sudden dips cannot be predicted from recent power alone.
 - A good weather forecast is worth a lot. Setup B cuts the error by about 82% relative to A. Permutation importance shows B relies almost entirely on irradiation at the target time, consistent with the near-linear power-to-irradiation relationship seen in the EDA.
 - In A, time of day dominates the importance plot. The lag and rolling features are strongly correlated with each other, so shuffling any one of them barely changes the error. This does not mean they are useless.
-- Random Forest and Gradient Boosting are statistically indistinguishable here (RMSE differences under 1% in both setups). No winner is claimed.
+- Random Forest and Gradient Boosting are practically indistinguishable here (RMSE differences under 1% in both setups). No winner is claimed.
 - Test errors are in line with cross-validation errors, which is consistent with no leakage between train and test.
 - The gap in the forecast plot on 17 June is excluded outage data.
 
